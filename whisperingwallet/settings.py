@@ -22,6 +22,8 @@ DEBUG = True
 # ALLOW ALL HOSTS IN DEPLOYMENT
 ALLOWED_HOSTS = ["*"]
 
+CSRF_TRUSTED_ORIGINS = ["http://*", "https://web-production-3853.up.railway.app"]
+
 # JWT to work
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
