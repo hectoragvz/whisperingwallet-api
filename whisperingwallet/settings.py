@@ -22,7 +22,9 @@ DEBUG = True
 # ALLOW ALL HOSTS IN DEPLOYMENT
 ALLOWED_HOSTS = ["*"]
 
-CSRF_TRUSTED_ORIGINS = ["http://*", "https://web-production-3853.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["http://*"]
+
+# "https://web-production-3853.up.railway.app"
 
 # JWT to work
 REST_FRAMEWORK = {
@@ -49,6 +51,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # New
+    "whitenoise.runserver_nostatic",
+    # new
     "rest_framework",
     "api",
     "corsheaders",
