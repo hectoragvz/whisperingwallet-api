@@ -22,7 +22,10 @@ DEBUG = True
 # ALLOW ALL HOSTS IN DEPLOYMENT
 ALLOWED_HOSTS = ["*"]
 
-CSRF_TRUSTED_ORIGINS = ["http://*"]
+CSRF_TRUSTED_ORIGINS = [
+    "http://*",
+    "https://whisperingwallet-api-production.up.railway.app",
+]
 
 # "https://web-production-3853.up.railway.app"
 
